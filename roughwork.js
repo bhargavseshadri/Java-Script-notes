@@ -1,5 +1,3 @@
-//promise , async , await 
-
 const one = () => {
     return "i am one";
 };
@@ -16,6 +14,10 @@ const two = () => {              //creating promise
         setTimeout(() => {
             resolve("i am two");  // we can use the reject in the same if we want
         },3000)
+
+        setTimeout(() => {
+            reject("i am rejected");  // we can use the reject in the same if we want
+        },5000)
     });
    
 }
@@ -37,4 +39,3 @@ const callMe = async() => {   //variable for calling above methods
 };
 
 callMe();
-

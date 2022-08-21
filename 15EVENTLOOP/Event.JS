@@ -5,8 +5,8 @@ const one = () => {
 const two = () => {
     setTimeout(() => {
         console.log("hurrayyy");
-    }, 3000)
-    console.log("i am two");
+    }, 3000) //3000 means it wait for 3 seconds
+    console.log("i am two"); // this will print until the 3 seconds over
 };
 
 const three = () => {
@@ -14,6 +14,6 @@ const three = () => {
 };
 
 one();
-three();
 two();
+three();
 
